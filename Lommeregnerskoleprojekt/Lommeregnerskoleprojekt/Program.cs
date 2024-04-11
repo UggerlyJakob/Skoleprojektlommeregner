@@ -1,4 +1,6 @@
-﻿namespace Lommeregner
+﻿using System.Xml.Serialization;
+
+namespace Lommeregner
 {
     public class Program
     {
@@ -6,46 +8,51 @@
         {
             bool Start = true;
             int resultat = 0;
-
+            var choice2 = 0;
+            var choice = 0;
             do
             {
-                Console.WriteLine("Tryk 1 - Plus");
-                Console.WriteLine("Tryk 2 - Minus");
-                Console.WriteLine("Tryk 3 - Dividere");
-                Console.WriteLine("Tryk 4 - Gange");
-                Console.WriteLine("Try 5 - EXIT");
+                choice = Menu("\nIndtastete Tal: ");
 
-
-                var choice = ReadInput("\nIndtastete Tal: ");
-
-
-                if (choice == 1)
+                do
                 {
-                    Console.Clear();
-                    Console.WriteLine("Indtast første tal");
+                    if (choice == 1 || choice2 == 1)
+                    {
+                        Console.Clear();
+                        var førsteTal = ReadInput("\nIndtastete Tal: ");
 
-                    var førsteTal = ReadInput("\nIndtastete Tal: ");
+                        Console.WriteLine("Indtast anden tal");
+                        var andenTal = ReadInput("\nIndtastete Tal: ");
 
-                    Console.WriteLine("Indtast anden tal 2");
-                    var andenTal = ReadInput("\nIndtastete Tal: ");
+                        Console.Clear();
+                        resultat = førsteTal + andenTal;
 
 
+                        Console.WriteLine("Resulatet er:" + resultat);
 
-                    resultat = førsteTal + andenTal;
+                        Console.WriteLine("\n Try 1 Hvis Du vil plusse igen");
+                        Console.Write("Eller Trry 2 for at se Menu");
+                        choice2 = ReadInput(": ");
+                    }
+                    else if (choice2 == 2)
+                    {
+                        break;
+                    }
 
-                    Console.WriteLine(resultat);
-                }
+
+                } while (choice2 != 2);
+
+
                 if (choice == 2)
                 {
                     Console.Clear();
-                    Console.WriteLine("Indtast første tal");
                     var førsteTal = ReadInput("\nIndtastete Tal: ");
 
-                    Console.WriteLine("Indtast anden tal 2");
+                    Console.WriteLine("Indtast anden tal");
                     var andenTal = ReadInput("\nIndtastete Tal: ");
 
 
-
+                    Console.Clear();
                     resultat = førsteTal + andenTal;
 
                     Console.WriteLine(resultat);
@@ -53,15 +60,14 @@
                 if (choice == 3)
                 {
                     Console.Clear();
-                    Console.WriteLine("Indtast første tal");
 
                     var førsteTal = ReadInput("\nIndtastete Tal: ");
 
-                    Console.WriteLine("Indtast anden tal 2");
+                    Console.WriteLine("Indtast anden tal");
                     var andenTal = ReadInput("\nIndtastete Tal: ");
 
 
-
+                    Console.Clear();
                     resultat = førsteTal / andenTal;
 
                     Console.WriteLine(resultat);
@@ -70,7 +76,6 @@
                 if (choice == 4)
                 {
                     Console.Clear();
-                    Console.WriteLine("Indtast første tal");
                     var førsteTal = ReadInput("\nIndtastete Tal: ");
 
 
@@ -78,10 +83,14 @@
                     var andenTal = ReadInput("\nIndtastete Tal: ");
 
 
-
+                    Console.Clear();
                     resultat = førsteTal * andenTal;
 
                     Console.WriteLine(resultat);
+                }
+                if (choice2 == 2)
+                {
+                    Console.Clear();
                 }
                 if (choice == 5)
                 {
@@ -95,6 +104,19 @@
             string input = Console.ReadLine();
             int value = Convert.ToInt32(input);
             return value;
+        }
+        static int Menu(string promt)
+        {
+            Console.WriteLine("Tryk 1 - Plus");
+            Console.WriteLine("Tryk 2 - Minus");
+            Console.WriteLine("Tryk 3 - Dividere");
+            Console.WriteLine("Tryk 4 - Gange");
+            Console.WriteLine("Try 5 - EXIT");
+
+
+            var choice = ReadInput(promt);
+            return choice;
+
         }
     }
 }

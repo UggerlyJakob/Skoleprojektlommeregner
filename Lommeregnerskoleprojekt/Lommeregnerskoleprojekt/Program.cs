@@ -6,95 +6,103 @@ namespace Lommeregner
     {
         static void Main(string[] args)
         {
+            #region Variables
             bool Start = true;
-            int resultat = 0;
-            var choice2 = 0;
-            var choice = 0;
+            int resultat;
+            int vælg;
+            int Plus = 0;
+            int Minus = 0;
+            int Divider = 0;
+            int Gange = 0;
+            #endregion
+
             do
             {
-                choice = Menu("\nIndtastete Tal: ");
+                vælg = Menu("\nIndtastete Tal: ");
 
                 do
                 {
-                    if (choice == 1 || choice2 == 1)
+                    if (vælg == 1 || Plus == 1)
                     {
                         Console.Clear();
-                        var førsteTal = ReadInput("\nIndtastete Tal: ");
-
-                        Console.WriteLine("Indtast anden tal");
-                        var andenTal = ReadInput("\nIndtastete Tal: ");
+                        int førsteTal = ReadInput("\nIndtastete Første Tal: ");
+                        int andenTal = ReadInput("\nIndtastete Andet Tal: ");
 
                         Console.Clear();
                         resultat = førsteTal + andenTal;
 
+                        Console.WriteLine("Resulatet er:" + resultat);
+
+                        Console.WriteLine("\nTry 1 Hvis Du vil plusse igen");
+                        Console.Write("\nTry 2 for at se Menu");
+                        Plus = ReadInput(": ");
+                    }
+                } while (Plus != 2);
+
+                do
+                {
+                    if (vælg == 2 || Minus == 1)
+                    {
+                        Console.Clear();
+                        int førsteTal = ReadInput("\nIndtastete Første Tal: ");
+                        int andenTal = ReadInput("\nIndtastete Andet Tal: ");
+
+                        Console.Clear();
+                        resultat = førsteTal - andenTal;
 
                         Console.WriteLine("Resulatet er:" + resultat);
 
-                        Console.WriteLine("\n Try 1 Hvis Du vil plusse igen");
-                        Console.Write("Eller Trry 2 for at se Menu");
-                        choice2 = ReadInput(": ");
+                        Console.WriteLine("\nTry 1 Hvis Du vil plusse igen");
+                        Console.Write("\nTry 2 for at se Menu");
+                        Minus = ReadInput(": ");
                     }
-                    else if (choice2 == 2)
+                } while (Minus != 2);
+
+                do
+                {
+                    if (vælg == 3 || Divider == 1)
                     {
-                        break;
+                        Console.Clear();
+                        int førsteTal = ReadInput("\nIndtastete Første Tal: ");
+                        int andenTal = ReadInput("\nIndtastete Andet Tal: ");
+
+                        Console.Clear();
+                        resultat = førsteTal / andenTal;
+
+                        Console.WriteLine("Resulatet er:" + resultat);
+
+                        Console.WriteLine("\nTry 1 Hvis Du vil plusse igen");
+                        Console.Write("\nTry 2 for at se Menu");
+                        Divider = ReadInput(": ");
                     }
+                } while (Divider != 2);
 
-
-                } while (choice2 != 2);
-
-
-                if (choice == 2)
+                do
                 {
-                    Console.Clear();
-                    var førsteTal = ReadInput("\nIndtastete Tal: ");
+                    if (vælg == 4 || Gange == 1)
+                    {
+                        Console.Clear();
+                        int førsteTal = ReadInput("\nIndtastete Første Tal: ");
+                        int andenTal = ReadInput("\nIndtastete Andet Tal: ");
 
-                    Console.WriteLine("Indtast anden tal");
-                    var andenTal = ReadInput("\nIndtastete Tal: ");
+                        Console.Clear();
+                        resultat = førsteTal * andenTal;
 
+                        Console.WriteLine("Resulatet er:" + resultat);
 
-                    Console.Clear();
-                    resultat = førsteTal + andenTal;
+                        Console.WriteLine("\nTry 1 Hvis Du vil plusse igen");
+                        Console.Write("\nTry 2 for at se Menu");
+                        Gange = ReadInput(": ");
+                    }
+                } while (Gange != 2);
 
-                    Console.WriteLine(resultat);
-                }
-                if (choice == 3)
-                {
-                    Console.Clear();
-
-                    var førsteTal = ReadInput("\nIndtastete Tal: ");
-
-                    Console.WriteLine("Indtast anden tal");
-                    var andenTal = ReadInput("\nIndtastete Tal: ");
-
-
-                    Console.Clear();
-                    resultat = førsteTal / andenTal;
-
-                    Console.WriteLine(resultat);
-
-                }
-                if (choice == 4)
-                {
-                    Console.Clear();
-                    var førsteTal = ReadInput("\nIndtastete Tal: ");
-
-
-                    Console.WriteLine("Indtast andet tal");
-                    var andenTal = ReadInput("\nIndtastete Tal: ");
-
-
-                    Console.Clear();
-                    resultat = førsteTal * andenTal;
-
-                    Console.WriteLine(resultat);
-                }
-                if (choice2 == 2)
-                {
-                    Console.Clear();
-                }
-                if (choice == 5)
+                if (vælg == 5)
                 {
                     Start = false;
+                }
+                if (Plus == 2)
+                {
+                    Console.Clear();
                 }
             } while (Start);
         }
@@ -114,7 +122,7 @@ namespace Lommeregner
             Console.WriteLine("Try 5 - EXIT");
 
 
-            var choice = ReadInput(promt);
+            int choice = ReadInput(promt);
             return choice;
 
         }

@@ -53,7 +53,8 @@
                             Console.Clear();
                             resultat = førsteTal - andenTal;
 
-                            Console.WriteLine("Resulatet er:" + resultat);
+                            Console.WriteLine($"{førsteTal} + {andenTal} = {resultat}");
+                            Console.WriteLine("------------------------------------");
 
                             Console.WriteLine("\nTry 1 Hvis Du vil minus igen");
                             Console.Write("\nTry 2 for at se Menu");
@@ -74,7 +75,8 @@
                             Console.Clear();
                             resultat = førsteTal / andenTal;
 
-                            Console.WriteLine("Resulatet er:" + resultat);
+                            Console.WriteLine($"{førsteTal} + {andenTal} = {resultat}");
+                            Console.WriteLine("------------------------------------");
 
                             Console.WriteLine("\nTryk 1 Hvis Du vil / igen");
                             Console.Write("\nTryk 2 for at se Menu");
@@ -95,7 +97,8 @@
                             Console.Clear();
                             resultat = førsteTal - andenTal;
 
-                            Console.WriteLine("Resulatet er:" + resultat);
+                            Console.WriteLine($"{førsteTal} + {andenTal} = {resultat}");
+                            Console.WriteLine("------------------------------------");
 
                             Console.WriteLine("\nTry 1 Hvis Du vil minus igen");
                             Console.Write("\nTry 2 for at se Menu");

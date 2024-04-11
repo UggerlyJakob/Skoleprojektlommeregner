@@ -26,6 +26,8 @@
                 Console.WriteLine(resultat);
             }
         }
+
+        // Kommentar et eller andet!
         static int ReadInput(string promt)
         {
             Console.Write(promt);

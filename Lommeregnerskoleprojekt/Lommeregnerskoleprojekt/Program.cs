@@ -25,6 +25,12 @@
 
                 Console.WriteLine(resultat);
             }
+
+            // Minus Logikken 
+
+            // Dividere Logikken
+
+            // Gange Logikken
         }
 
         // Kommentar et eller andet!

@@ -30,7 +30,8 @@
                             Console.Clear();
                             resultat = førsteTal + andenTal;
 
-                            Console.WriteLine("Resulatet er:" + resultat);
+                            Console.WriteLine($"{førsteTal} + {andenTal} = {resultat}");
+                            Console.WriteLine("------------------------------------");
 
                             Console.WriteLine("\nTry 1 Hvis Du vil plusse igen");
                             Console.Write("\nTry 2 for at se Menu");

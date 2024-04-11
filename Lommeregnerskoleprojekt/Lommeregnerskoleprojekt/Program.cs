@@ -1,5 +1,11 @@
 ﻿namespace Lommeregner
 {
+    //TO DO LIST!!!!!
+    //make so we can calculate more then 2 numbers.
+    //give more options like sqaure etc.
+    //times with 0.5 or silliar logic if we have more then 2 numbers
+
+
     public class Program
     {
         static void Main(string[] args)

@@ -4,74 +4,77 @@
     {
         static void Main(string[] args)
         {
+            bool Start = true;
             int resultat = 0;
 
-            Console.WriteLine("Tryk 1 - Plus");
-            Console.WriteLine("Tryk 2 - Minus");
-            Console.WriteLine("Tryk 3 - Dividere");
-            Console.WriteLine("Tryk 4 - Gange");
-
-            var choice = ReadInput("Indtastete Tal: ");
-
-            if (choice == 1)
-            {
-                Console.WriteLine("Indtast første tal");
-                var førsteTal = ReadInput("Indtastete Tal: ");
-
-                Console.WriteLine("Indtast anden tal 2");
-                var andenTal = ReadInput("Indtastete Tal: ");
-
-                resultat = førsteTal + andenTal;
-
-                Console.WriteLine(resultat);
-            }
-            if (choice == 3)
+            do
             {
 
-                Console.WriteLine("Indtast første tal");
-                var førsteTal = ReadInput("Indtastete Tal: ");
 
-                Console.WriteLine("Indtast anden tal 2");
-                var andenTal = ReadInput("Indtastete Tal: ");
+                Console.WriteLine("Tryk 1 - Plus");
+                Console.WriteLine("Tryk 2 - Minus");
+                Console.WriteLine("Tryk 3 - Dividere");
+                Console.WriteLine("Tryk 4 - Gange");
+                Console.WriteLine("Try 5 - EXIT");
 
-                resultat = førsteTal / andenTal;
+                var choice = ReadInput("Indtastete Tal: ");
 
-                Console.WriteLine(resultat);
+                if (choice == 1)
+                {
+                    Console.WriteLine("Indtast første tal");
+                    var førsteTal = ReadInput("Indtastete Tal: ");
 
-            }
+                    Console.WriteLine("Indtast anden tal 2");
+                    var andenTal = ReadInput("Indtastete Tal: ");
 
-            // Minus Logikken 
-            if( choice == 2)
-            {
-                Console.WriteLine("Indtast første tal");
-                var førsteTal = ReadInput("Indtastete Tal: ");
+                    resultat = førsteTal + andenTal;
 
-                Console.WriteLine("Indtast anden tal 2");
-                var andenTal = ReadInput("Indtastete Tal: ");
+                    Console.WriteLine(resultat);
+                }
+                if (choice == 2)
+                {
+                    Console.WriteLine("Indtast første tal");
+                    var førsteTal = ReadInput("Indtastete Tal: ");
 
-                resultat = førsteTal + andenTal;
+                    Console.WriteLine("Indtast anden tal 2");
+                    var andenTal = ReadInput("Indtastete Tal: ");
 
-                Console.WriteLine(resultat);
-            }
+                    resultat = førsteTal + andenTal;
 
-            // Dividere Logikken
+                    Console.WriteLine(resultat);
+                }
+                if (choice == 3)
+                {
 
-            // Gange Logikken
-            if ( choice == 4)
-            {
-                Console.WriteLine("Indtast første tal");
-                var førsteTal = ReadInput("Indtastete Tal: ");
+                    Console.WriteLine("Indtast første tal");
+                    var førsteTal = ReadInput("Indtastete Tal: ");
 
-                Console.WriteLine("Indtast anden tal 2");
-                var andenTal = ReadInput("Indtastete Tal: ");
+                    Console.WriteLine("Indtast anden tal 2");
+                    var andenTal = ReadInput("Indtastete Tal: ");
 
-                resultat = førsteTal * andenTal;
+                    resultat = førsteTal / andenTal;
 
-                Console.WriteLine(resultat);
-            }
+                    Console.WriteLine(resultat);
+
+                }
+                if (choice == 4)
+                {
+                    Console.WriteLine("Indtast første tal");
+                    var førsteTal = ReadInput("Indtastete Tal: ");
+
+                    Console.WriteLine("Indtast anden tal 2");
+                    var andenTal = ReadInput("Indtastete Tal: ");
+
+                    resultat = førsteTal * andenTal;
+
+                    Console.WriteLine(resultat);
+                }
+                if (choice == 5)
+                {
+                    Start = false;
+                }
+            } while (Start);
         }
-
-        // Kommentar et eller andet!
         static int ReadInput(string promt)
         {
             Console.Write(promt);

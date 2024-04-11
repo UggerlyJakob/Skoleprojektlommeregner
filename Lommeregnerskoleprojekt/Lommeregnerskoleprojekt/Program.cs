@@ -27,6 +27,18 @@
             }
 
             // Minus Logikken 
+            if( choice == 2)
+            {
+                Console.WriteLine("Indtast første tal");
+                var førsteTal = ReadInput("Indtastete Tal: ");
+
+                Console.WriteLine("Indtast anden tal 2");
+                var andenTal = ReadInput("Indtastete Tal: ");
+
+                resultat = førsteTal + andenTal;
+
+                Console.WriteLine(resultat);
+            }
 
             // Dividere Logikken
 

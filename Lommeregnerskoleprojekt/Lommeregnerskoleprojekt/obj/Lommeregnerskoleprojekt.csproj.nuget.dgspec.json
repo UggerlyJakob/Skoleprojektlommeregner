@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj": {}
+    "C:\\Users\\Emil\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj": {
+    "C:\\Users\\Emil\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj",
+        "projectUniqueName": "C:\\Users\\Emil\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj",
         "projectName": "Lommeregnerskoleprojekt",
-        "projectPath": "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj",
-        "packagesPath": "C:\\Users\\Einars\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\obj\\",
+        "projectPath": "C:\\Users\\Emil\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj",
+        "packagesPath": "C:\\Users\\Emil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emil\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Einars\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Emil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

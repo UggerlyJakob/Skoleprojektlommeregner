@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\",
+  "WorkspaceRootPath": "C:\\Users\\Emil\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F81DCD1-B451-430B-B0D3-97B89146856F}|Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj|c:\\users\\einars\\documents\\github\\skoleprojektlommeregner\\lommeregnerskoleprojekt\\lommeregnerskoleprojekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1F81DCD1-B451-430B-B0D3-97B89146856F}|Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj|c:\\users\\emil\\documents\\github\\skoleprojektlommeregner\\lommeregnerskoleprojekt\\lommeregnerskoleprojekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F81DCD1-B451-430B-B0D3-97B89146856F}|Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj|solutionrelative:lommeregnerskoleprojekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Emil\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Program.cs",
               "RelativeDocumentMoniker": "Lommeregnerskoleprojekt\\Program.cs",
-              "ToolTip": "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Program.cs",
+              "ToolTip": "C:\\Users\\Emil\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Program.cs",
               "RelativeToolTip": "Lommeregnerskoleprojekt\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAATAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwB8AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T09:53:00.232Z",
               "EditorCaption": ""

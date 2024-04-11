@@ -28,6 +28,9 @@
         }
 
         //asdjaksjd
+
+        // Hej jeg hedder Emil
+
         static int ReadInput(string promt)
         {
             Console.Write(promt);

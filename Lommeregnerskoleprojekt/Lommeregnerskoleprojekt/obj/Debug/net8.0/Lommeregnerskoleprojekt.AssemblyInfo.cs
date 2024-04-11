@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lommeregnerskoleprojekt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dffde40596ab90273d8f4cb697102fb4acbeca0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6a8030e1a3eca53f7cf408aa2d51afcfb481885")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lommeregnerskoleprojekt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lommeregnerskoleprojekt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,23 +9,22 @@
 
             do
             {
-
-
                 Console.WriteLine("Tryk 1 - Plus");
                 Console.WriteLine("Tryk 2 - Minus");
                 Console.WriteLine("Tryk 3 - Dividere");
                 Console.WriteLine("Tryk 4 - Gange");
                 Console.WriteLine("Try 5 - EXIT");
 
-                var choice = ReadInput("Indtastete Tal: ");
+                var choice = ReadInput("\nIndtastete Tal: ");
 
                 if (choice == 1)
                 {
+                    Console.Clear();
                     Console.WriteLine("Indtast første tal");
-                    var førsteTal = ReadInput("Indtastete Tal: ");
+                    var førsteTal = ReadInput("\nIndtastete Tal: ");
 
                     Console.WriteLine("Indtast anden tal 2");
-                    var andenTal = ReadInput("Indtastete Tal: ");
+                    var andenTal = ReadInput("\nIndtastete Tal: ");
 
                     resultat = førsteTal + andenTal;
 
@@ -33,11 +32,12 @@
                 }
                 if (choice == 2)
                 {
+                    Console.Clear();
                     Console.WriteLine("Indtast første tal");
-                    var førsteTal = ReadInput("Indtastete Tal: ");
+                    var førsteTal = ReadInput("\nIndtastete Tal: ");
 
                     Console.WriteLine("Indtast anden tal 2");
-                    var andenTal = ReadInput("Indtastete Tal: ");
+                    var andenTal = ReadInput("\nIndtastete Tal: ");
 
                     resultat = førsteTal + andenTal;
 
@@ -45,12 +45,12 @@
                 }
                 if (choice == 3)
                 {
-
+                    Console.Clear();
                     Console.WriteLine("Indtast første tal");
-                    var førsteTal = ReadInput("Indtastete Tal: ");
+                    var førsteTal = ReadInput("\nIndtastete Tal: ");
 
                     Console.WriteLine("Indtast anden tal 2");
-                    var andenTal = ReadInput("Indtastete Tal: ");
+                    var andenTal = ReadInput("\nIndtastete Tal: ");
 
                     resultat = førsteTal / andenTal;
 
@@ -59,11 +59,12 @@
                 }
                 if (choice == 4)
                 {
+                    Console.Clear();
                     Console.WriteLine("Indtast første tal");
                     var førsteTal = ReadInput("Indtastete Tal: ");
 
                     Console.WriteLine("Indtast anden tal 2");
-                    var andenTal = ReadInput("Indtastete Tal: ");
+                    var andenTal = ReadInput("\nIndtastete Tal: ");
 
                     resultat = førsteTal * andenTal;
 

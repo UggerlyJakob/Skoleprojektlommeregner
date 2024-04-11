@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jhj\\source\\repos\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj": {}
+    "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jhj\\source\\repos\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj": {
+    "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jhj\\source\\repos\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj",
+        "projectUniqueName": "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj",
         "projectName": "Lommeregnerskoleprojekt",
-        "projectPath": "C:\\Users\\jhj\\source\\repos\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj",
-        "packagesPath": "C:\\Users\\jhj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jhj\\source\\repos\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\obj\\",
+        "projectPath": "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.csproj",
+        "packagesPath": "C:\\Users\\Einars\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Einars\\Documents\\GitHub\\Skoleprojektlommeregner\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jhj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Einars\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

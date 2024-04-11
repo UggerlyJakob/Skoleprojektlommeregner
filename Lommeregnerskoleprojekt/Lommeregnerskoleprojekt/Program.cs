@@ -27,7 +27,7 @@
             }
         }
 
-
+        //asdjaksjd
         static int ReadInput(string promt)
         {
             Console.Write(promt);

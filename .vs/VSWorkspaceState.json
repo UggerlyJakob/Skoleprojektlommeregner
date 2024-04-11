@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Lommeregnerskoleprojekt"
+    "\\Lommeregnerskoleprojekt",
+    "\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt"
   ],
-  "SelectedNode": "\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt.sln",
+  "SelectedNode": "\\Lommeregnerskoleprojekt\\Lommeregnerskoleprojekt\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

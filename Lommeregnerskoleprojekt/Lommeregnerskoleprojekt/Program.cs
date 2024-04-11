@@ -57,6 +57,18 @@
             // Dividere Logikken
 
             // Gange Logikken
+            if ( choice == 4)
+            {
+                Console.WriteLine("Indtast første tal");
+                var førsteTal = ReadInput("Indtastete Tal: ");
+
+                Console.WriteLine("Indtast anden tal 2");
+                var andenTal = ReadInput("Indtastete Tal: ");
+
+                resultat = førsteTal * andenTal;
+
+                Console.WriteLine(resultat);
+            }
         }
 
         // Kommentar et eller andet!

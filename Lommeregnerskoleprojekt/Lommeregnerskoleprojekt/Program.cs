@@ -26,11 +26,6 @@
                 Console.WriteLine(resultat);
             }
         }
-
-        //Jeg Hedder TOnny 
-
-        // Hej jeg hedder Emil
-
         static int ReadInput(string promt)
         {
             Console.Write(promt);

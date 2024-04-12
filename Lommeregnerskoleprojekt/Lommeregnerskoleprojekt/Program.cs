@@ -1,5 +1,11 @@
 ﻿namespace Lommeregner
 {
+    //TO DO LIST!!!!!
+    //make so we can calculate more then 2 numbers.
+    //give more options like sqaure etc.
+    //times with 0.5 or silliar logic if we have more then 2 numbers
+
+
     public class Program
     {
         static void Main(string[] args)
@@ -8,10 +14,10 @@
             bool Start = true;
             int resultat;
             int vælg;
-            int Plus = 0;
-            int Minus = 0;
-            int Divider = 0;
-            int Gange = 0;
+            int Plus;
+            int Minus;
+            int Divider;
+            int Gange;
             #endregion
 
             do
@@ -34,11 +40,15 @@
                             Console.WriteLine("------------------------------------");
 
                             Console.WriteLine("\nTry 1 Hvis Du vil plusse igen");
-                            Console.Write("\nTryk 2 for at se Menu");
+                            Console.Write("\nTry 2 for at se Menu");
                             Plus = ReadInput(": ");
 
                             if (Plus == 2)
+                            {   
+                                Console.Clear();
                                 break;
+                            }
+                               
 
                         } while (true);
                         break;
@@ -53,15 +63,18 @@
                             Console.Clear();
                             resultat = førsteTal - andenTal;
 
-                            Console.WriteLine("Resulatet er:" + resultat);
+                            Console.WriteLine($"{førsteTal} - {andenTal} = {resultat}");
+                            Console.WriteLine("------------------------------------");
 
-                            Console.WriteLine("\nTry 1 Hvis Du vil minus igen");
+                            Console.WriteLine("\nTry 1 Hvis Du vil - igen");
                             Console.Write("\nTry 2 for at se Menu");
-                            Plus = ReadInput(": ");
+                            Minus = ReadInput(": ");
 
-                            if (Plus == 2)
+                            if (Minus == 2)
+                            {
+                                Console.Clear();
                                 break;
-
+                            }
                         } while (true);
                         break;
                     case 3:
@@ -74,14 +87,18 @@
                             Console.Clear();
                             resultat = førsteTal / andenTal;
 
-                            Console.WriteLine("Resulatet er:" + resultat);
+                            Console.WriteLine($"{førsteTal} / {andenTal} = {resultat}");
+                            Console.WriteLine("------------------------------------");
 
                             Console.WriteLine("\nTryk 1 Hvis Du vil / igen");
                             Console.Write("\nTryk 2 for at se Menu");
-                            Plus = ReadInput(": ");
+                            Divider = ReadInput(": ");
 
-                            if (Plus == 2)
+                            if (Divider == 2)
+                            {
+                                Console.Clear();
                                 break;
+                            }
 
                         } while (true);
                         break;
@@ -93,47 +110,48 @@
                             int andenTal = ReadInput("\nIndtastete Andet Tal: ");
 
                             Console.Clear();
-                            resultat = førsteTal - andenTal;
+                            resultat = førsteTal * andenTal;
 
-                            Console.WriteLine("Resulatet er:" + resultat);
+                            Console.WriteLine($"{førsteTal} * {andenTal} = {resultat}");
+                            Console.WriteLine("------------------------------------");
 
-                            Console.WriteLine("\nTry 1 Hvis Du vil minus igen");
+                            Console.WriteLine("\nTry 1 Hvis Du vil * igen");
                             Console.Write("\nTry 2 for at se Menu");
-                            Plus = ReadInput(": ");
+                            Gange = ReadInput(": ");
 
-                            if (Plus == 2)
+                            if (Gange == 2)
+                            {
+                                Console.Clear();
                                 break;
+                            }
 
                         } while (true);
                         break;
                     case 5:
+
                         Start = false;
                         break;
                 }
-                if (vælg != 5)
-                    Console.Clear();
             } while (Start);
         }
-
         static int ReadInput(string promt)
-            {
-                Console.Write(promt);
-                string input = Console.ReadLine();
-                int value = Convert.ToInt32(input);
-                return value;
-            }
-            static int Menu(string promt)
-            {
-                Console.WriteLine("Tryk 1 - Plus");
-                Console.WriteLine("Tryk 2 - Minus");
-                Console.WriteLine("Tryk 3 - Dividere");
-                Console.WriteLine("Tryk 4 - Gange");
-                Console.WriteLine("Try 5 - EXIT");
+        {
+            Console.Write(promt);
+            string input = Console.ReadLine();
+            int value = Convert.ToInt32(input);
+            return value;
+        }
+        static int Menu(string promt)
+        {
+            Console.WriteLine("Tryk 1 - Plus");
+            Console.WriteLine("Tryk 2 - Minus");
+            Console.WriteLine("Tryk 3 - Dividere");
+            Console.WriteLine("Tryk 4 - Gange");
+            Console.WriteLine("Try 5 - EXIT");
 
 
-                int choice = ReadInput(promt);
-                return choice;
-
-            }
+            int choice = ReadInput(promt);
+            return choice;
         }
     }
+}

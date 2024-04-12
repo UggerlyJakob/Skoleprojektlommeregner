@@ -34,7 +34,7 @@
                             Console.WriteLine("------------------------------------");
 
                             Console.WriteLine("\nTry 1 Hvis Du vil plusse igen");
-                            Console.Write("\nTry 2 for at se Menu");
+                            Console.Write("\nTryk 2 for at se Menu");
                             Plus = ReadInput(": ");
 
                             if (Plus == 2)

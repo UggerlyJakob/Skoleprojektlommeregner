@@ -40,7 +40,11 @@ namespace Lommeregner
                             Console.Clear();
                             resultat = førsteTal + andenTal;
 
-                            Console.WriteLine($"{førsteTal} + {andenTal} = {resultat}");
+                            Console.Clear();
+                            Console.Write($"{førsteTal} + {andenTal} = ");
+                            Console.ForegroundColor = ConsoleColor.Green; // Set the color to green
+                            Console.WriteLine($"{resultat}");
+                            Console.ResetColor(); // Reset the color to the default
                             Console.WriteLine("------------------------------------");
 
                             Console.WriteLine("\nTry 1 Hvis Du vil plusse igen");
@@ -67,7 +71,11 @@ namespace Lommeregner
                             Console.Clear();
                             resultat = førsteTal - andenTal;
 
-                            Console.WriteLine($"{førsteTal} - {andenTal} = {resultat}");
+                            Console.Clear();
+                            Console.Write($"{førsteTal} - {andenTal} = ");
+                            Console.ForegroundColor = ConsoleColor.Green; // Set the color to green
+                            Console.WriteLine($"{resultat}");
+                            Console.ResetColor(); // Reset the color to the default
                             Console.WriteLine("------------------------------------");
 
                             Console.WriteLine("\nTry 1 Hvis Du vil - igen");
@@ -90,7 +98,11 @@ namespace Lommeregner
                             Console.Clear();
                             resultat = førsteTal / andenTal;
 
-                            Console.WriteLine($"{førsteTal} / {andenTal} = {resultat}");
+                            Console.Clear();
+                            Console.Write($"{førsteTal} / {andenTal} = ");
+                            Console.ForegroundColor = ConsoleColor.Green; // Set the color to green
+                            Console.WriteLine($"{resultat}");
+                            Console.ResetColor(); // Reset the color to the default
                             Console.WriteLine("------------------------------------");
 
                             Console.WriteLine("\nTryk 1 Hvis Du vil / igen");
@@ -110,12 +122,16 @@ namespace Lommeregner
                         {
                             double førsteTal = FørsteTal();
                             double andenTal = AndetTal();
-
-                            Console.Clear();
                             resultat = førsteTal * andenTal;
 
-                            Console.WriteLine($"{førsteTal} * {andenTal} = {resultat}");
+                            Console.Clear();
+                            Console.Write($"{førsteTal} * {andenTal} = ");
+                            Console.ForegroundColor = ConsoleColor.Green; // Set the color to green
+                            Console.WriteLine($"{resultat}");
+                            Console.ResetColor(); // Reset the color to the default
                             Console.WriteLine("------------------------------------");
+
+
 
                             Console.WriteLine("\nTry 1 Hvis Du vil * igen");
                             Console.Write("\nTry 2 for at se Menu");
@@ -151,7 +167,9 @@ namespace Lommeregner
                 if (!double.TryParse(input, out value))
                 {
                     Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Red; // Sætter farven til rød
                     Console.WriteLine($"{input} {errormessage}");
+                    Console.ResetColor(); // Nulstil farven til standardfarven
                 }
                 else
                 {

@@ -12,12 +12,12 @@
         {
             #region Variables
             bool Start = true;
-            int resultat;
-            int vælg;
-            int Plus;
-            int Minus;
-            int Divider;
-            int Gange;
+            double resultat;
+            double vælg;
+            double Plus;
+            double Minus;
+            double Divider;
+            double Gange;
             #endregion
 
             do
@@ -30,8 +30,8 @@
                         do
                         {
                             Console.Clear();
-                            int førsteTal = ReadInput("\nIndtastete Første Tal: ");
-                            int andenTal = ReadInput("\nIndtastete Andet Tal: ");
+                            double førsteTal = ReadInput("\nIndtastete Første Tal: ");
+                            double andenTal = ReadInput("\nIndtastete Andet Tal: ");
 
                             Console.Clear();
                             resultat = førsteTal + andenTal;
@@ -57,8 +57,8 @@
                         do
                         {
                             Console.Clear();
-                            int førsteTal = ReadInput("\nIndtastete Første Tal: ");
-                            int andenTal = ReadInput("\nIndtastete Andet Tal: ");
+                            double førsteTal = ReadInput("\nIndtastete Første Tal: ");
+                            double andenTal = ReadInput("\nIndtastete Andet Tal: ");
 
                             Console.Clear();
                             resultat = førsteTal - andenTal;
@@ -81,8 +81,8 @@
                         do
                         {
                             Console.Clear();
-                            int førsteTal = ReadInput("\nIndtastete Første Tal: ");
-                            int andenTal = ReadInput("\nIndtastete Andet Tal: ");
+                            double førsteTal = ReadInput("\nIndtastete Første Tal: ");
+                            double andenTal = ReadInput("\nIndtastete Andet Tal: ");
 
                             Console.Clear();
                             resultat = førsteTal / andenTal;
@@ -105,9 +105,9 @@
                     case 4:
                         do
                         {
-                            Console.Clear();
-                            int førsteTal = ReadInput("\nIndtastete Første Tal: ");
-                            int andenTal = ReadInput("\nIndtastete Andet Tal: ");
+                            //Console.Clear();
+                            double førsteTal = ReadInput("\nIndtastete Første Tal: ");
+                            double andenTal = ReadInput("\nIndtastete Andet Tal: ");
 
                             Console.Clear();
                             resultat = førsteTal * andenTal;
@@ -134,14 +134,14 @@
                 }
             } while (Start);
         }
-        static int ReadInput(string promt)
+        static double ReadInput(string promt)
         {
             Console.Write(promt);
             string input = Console.ReadLine();
-            int value = Convert.ToInt32(input);
+            double value = Convert.ToDouble(input);
             return value;
         }
-        static int Menu(string promt)
+        static double Menu(string promt)
         {
             Console.WriteLine("Tryk 1 - Plus");
             Console.WriteLine("Tryk 2 - Minus");
@@ -150,7 +150,7 @@
             Console.WriteLine("Try 5 - EXIT");
 
 
-            int choice = ReadInput(promt);
+            double choice = ReadInput(promt);
             return choice;
         }
     }

@@ -29,8 +29,8 @@
                     case 1:
                         do
                         {
-                            int førsteTal = FørsteTal("");
-                            int andenTal = AndetTal("");
+                            double førsteTal = FørsteTal("");
+                            double andenTal = AndetTal("");
 
                             Console.Clear();
                             resultat = førsteTal + andenTal;
@@ -55,8 +55,8 @@
                     case 2:
                         do
                         {
-                            int førsteTal = FørsteTal("");
-                            int andenTal = AndetTal("");
+                            double førsteTal = FørsteTal("");
+                            double andenTal = AndetTal("");
 
                             Console.Clear();
                             resultat = førsteTal - andenTal;
@@ -78,8 +78,8 @@
                     case 3:
                         do
                         {
-                            int førsteTal = FørsteTal("");
-                            int andenTal = AndetTal("");
+                            double førsteTal = FørsteTal("");
+                            double andenTal = AndetTal("");
 
                             Console.Clear();
                             resultat = førsteTal / andenTal;
@@ -102,8 +102,8 @@
                     case 4:
                         do
                         {
-                            int førsteTal = FørsteTal("");
-                            int andenTal = AndetTal("");
+                            double førsteTal = FørsteTal("");
+                            double andenTal = AndetTal("");
 
                             Console.Clear();
                             resultat = førsteTal * andenTal;
@@ -149,17 +149,17 @@
             double choice = ReadInput(promt);
             return choice;
         }
-        static int FørsteTal(string promt)
+        static double FørsteTal(string promt)
         {
             Console.Clear();
             Console.WriteLine("\nIndtastete Første Tal: ");
-            int Tal1 = ReadInput(promt);
+            double Tal1 = ReadInput(promt);
             return Tal1;
         }
-        static int AndetTal(string promt)
+        static double AndetTal(string promt)
         {
             Console.WriteLine("\nIndtastete Andet Tal: ");
-            int Tal2 = ReadInput(promt);
+            double Tal2 = ReadInput(promt);
             return Tal2;
         }
     }

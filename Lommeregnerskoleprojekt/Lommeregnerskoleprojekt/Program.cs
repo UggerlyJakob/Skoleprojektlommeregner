@@ -1,4 +1,7 @@
-﻿namespace Lommeregner
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
+
+namespace Lommeregner
 {
     //TO DO LIST!!!!!
     //make so we can calculate more then 2 numbers.
@@ -22,13 +25,14 @@
 
             do
             {
-                vælg = Menu("\nIndtastete Tal: ");
+                vælg = Menu();
 
                 switch (vælg)
                 {
                     case 1:
                         do
                         {
+                            #region PLUS
                             double førsteTal = FørsteTal("");
                             double andenTal = AndetTal("");
 
@@ -47,7 +51,8 @@
                                 Console.Clear();
                                 break;
                             }
-                               
+
+                            #endregion
 
                         } while (true);
                         break;
@@ -132,21 +137,39 @@
         }
         static double ReadInput(string promt)
         {
-            Console.Write(promt);
-            string input = Console.ReadLine();
-            double value = Convert.ToDouble(input);
+                bool loop = true;
+                double value;
+            do
+            {
+                Console.WriteLine(promt);
+                string input = Console.ReadLine();
+
+
+                if (!double.TryParse(input, out value))
+                {
+                    Console.Clear();
+                    Console.WriteLine($"{input} er ikke et tal \n Indast et nyt tal: ");
+                }
+                else
+                {
+                    value = Convert.ToDouble(input);
+                    loop = false;
+                }
+            } while (loop == true);
+
             return value;
         }
-        static double Menu(string promt)
+        static double Menu()
         {
-            Console.WriteLine("Tryk 1 - Plus");
-            Console.WriteLine("Tryk 2 - Minus");
-            Console.WriteLine("Tryk 3 - Dividere");
-            Console.WriteLine("Tryk 4 - Gange");
-            Console.WriteLine("Try 5 - EXIT");
+            double choice;
+            choice = ReadInput("Tryk 1 - Plus \nTryk 2 - Minus \nTryk 3 - Dividere \nTryk 4 - Gang \nTryk 5 - EXIT \n Indtast Tal: ");
 
+            if (choice > 5) // Exception //hvis man vælger for højt tal i Menu.
+            {
+                Console.Clear();
+                Console.WriteLine("Prøv igen");
+            }
 
-            double choice = ReadInput(promt);
             return choice;
         }
         static double FørsteTal(string promt)

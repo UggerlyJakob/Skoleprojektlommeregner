@@ -65,6 +65,7 @@ namespace Lommeregner
                     case 2:
                         do
                         {
+                            #region Minus
                             double førsteTal = FørsteTal();
                             double andenTal = AndetTal();
 
@@ -89,9 +90,12 @@ namespace Lommeregner
                             }
                         } while (true);
                         break;
+
+                    #endregion
                     case 3:
                         do
                         {
+                            #region Divider
                             double førsteTal = FørsteTal();
                             double andenTal = AndetTal();
 
@@ -117,6 +121,7 @@ namespace Lommeregner
 
                         } while (true);
                         break;
+                        #endregion
                     case 4:
                         do
                         {
@@ -185,7 +190,7 @@ namespace Lommeregner
         static double Menu()
         {
             double choice;
-            choice = ReadInput("Indtast Tal: \n 1 - Plus \n 2 - Minus \n 3 - Dividere \n 4 - Gang \n 5 - EXIT ", " er et bogstav, Indtast venligst et tal imellem 1 og 5" );
+            choice = ReadInput("Indtast Tal: \n 1 - Plus \n 2 - Minus \n 3 - Dividere \n 4 - Gang \n 5 - EXIT ", "er et bogstav, Indtast venligst et tal imellem 1 og 5" );
 
         /*    if (choice > 5) // Exception //hvis man vælger for højt tal i Menu.
             {

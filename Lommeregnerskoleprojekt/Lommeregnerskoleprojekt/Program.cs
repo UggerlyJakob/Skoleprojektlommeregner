@@ -167,7 +167,7 @@ namespace Lommeregner
         static double Menu()
         {
             double choice;
-            choice = ReadInput("Tryk 1 - Plus \nTryk 2 - Minus \nTryk 3 - Dividere \nTryk 4 - Gang \nTryk 5 - EXIT \n Indtast Tal: ", " er et bogstav, Indtast venligst et tal imellem 1 og 5" );
+            choice = ReadInput("Indtast Tal: \n 1 - Plus \n 2 - Minus \n 3 - Dividere \n 4 - Gang \n 5 - EXIT ", " er et bogstav, Indtast venligst et tal imellem 1 og 5" );
 
         /*    if (choice > 5) // Exception //hvis man vælger for højt tal i Menu.
             {

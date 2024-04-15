@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Xml.Serialization;
 
 namespace Lommeregner
@@ -33,8 +34,8 @@ namespace Lommeregner
                         do
                         {
                             #region PLUS
-                            double førsteTal = FørsteTal("");
-                            double andenTal = AndetTal("");
+                            double førsteTal = FørsteTal();
+                            double andenTal = AndetTal();
 
                             Console.Clear();
                             resultat = førsteTal + andenTal;
@@ -60,8 +61,8 @@ namespace Lommeregner
                     case 2:
                         do
                         {
-                            double førsteTal = FørsteTal("");
-                            double andenTal = AndetTal("");
+                            double førsteTal = FørsteTal();
+                            double andenTal = AndetTal();
 
                             Console.Clear();
                             resultat = førsteTal - andenTal;
@@ -83,8 +84,8 @@ namespace Lommeregner
                     case 3:
                         do
                         {
-                            double førsteTal = FørsteTal("");
-                            double andenTal = AndetTal("");
+                            double førsteTal = FørsteTal();
+                            double andenTal = AndetTal();
 
                             Console.Clear();
                             resultat = førsteTal / andenTal;
@@ -107,8 +108,8 @@ namespace Lommeregner
                     case 4:
                         do
                         {
-                            double førsteTal = FørsteTal("");
-                            double andenTal = AndetTal("");
+                            double førsteTal = FørsteTal();
+                            double andenTal = AndetTal();
 
                             Console.Clear();
                             resultat = førsteTal * andenTal;
@@ -135,10 +136,12 @@ namespace Lommeregner
                 }
             } while (Start);
         }
-        static double ReadInput(string promt)
+        static double ReadInput(string promt, string errormessage = "er ikke et tal, indtast venligst et tal")
         {
+                
                 bool loop = true;
                 double value;
+            
             do
             {
                 Console.WriteLine(promt);
@@ -148,7 +151,7 @@ namespace Lommeregner
                 if (!double.TryParse(input, out value))
                 {
                     Console.Clear();
-                    Console.WriteLine($"{input} er ikke et tal \n Indast et nyt tal: ");
+                    Console.WriteLine($"{input} {errormessage}");
                 }
                 else
                 {
@@ -158,31 +161,34 @@ namespace Lommeregner
             } while (loop == true);
 
             return value;
+
         }
+
         static double Menu()
         {
             double choice;
-            choice = ReadInput("Tryk 1 - Plus \nTryk 2 - Minus \nTryk 3 - Dividere \nTryk 4 - Gang \nTryk 5 - EXIT \n Indtast Tal: ");
+            choice = ReadInput("Tryk 1 - Plus \nTryk 2 - Minus \nTryk 3 - Dividere \nTryk 4 - Gang \nTryk 5 - EXIT \n Indtast Tal: ", " er et bogstav, Indtast venligst et tal imellem 1 og 5" );
 
-            if (choice > 5) // Exception //hvis man vælger for højt tal i Menu.
+        /*    if (choice > 5) // Exception //hvis man vælger for højt tal i Menu.
             {
                 Console.Clear();
                 Console.WriteLine("Prøv igen");
-            }
+            }*/
 
             return choice;
         }
-        static double FørsteTal(string promt)
+        static double FørsteTal()
         {
             Console.Clear();
-            Console.WriteLine("\nIndtastete Første Tal: ");
-            double Tal1 = ReadInput(promt);
+            //Console.WriteLine("\nIndtastete Første Tal: ");
+            double Tal1 = ReadInput("Indtast Første Tal:");
             return Tal1;
         }
-        static double AndetTal(string promt)
+        static double AndetTal()
         {
-            Console.WriteLine("\nIndtastete Andet Tal: ");
-            double Tal2 = ReadInput(promt);
+            Console.Clear();
+            //Console.WriteLine("\nIndtastete Andet Tal: ");
+            double Tal2 = ReadInput("Indtast Andet Tal: ");
             return Tal2;
         }
     }
